@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iman Gadzhi-Inspired Portfolio</title>
+  <link rel="stylesheet" href="personal.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Iman Gadzhi-Inspired Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Your journey starts here. Discover how I can help elevate your business.</p>
+    <button onclick="scrollToSection('about')">Explore More</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>A bit about my experience, vision, and why I’m committed to helping businesses grow.</p>
+    <div class="milestones">
+      <div class="milestone">
+        <h3>5+ Years of Experience</h3>
+        <p>Experience in digital marketing, consulting, and entrepreneurship.</p>
+      </div>
+      <div class="milestone">
+        <h3>$10M Revenue Generated</h3>
+        <p>Track record of achieving measurable growth for clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>What I Offer</h2>
+    <div class="service">
+      <h3>Business Consulting</h3>
+      <p>Strategic advice to accelerate your business growth.</p>
+    </div>
+    <div class="service">
+      <h3>Marketing Strategy</h3>
+      <p>Innovative solutions to drive engagement and conversion.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Chat Widget -->
+  <div id="chat-widget">
+    <div id="chat-header" onclick="toggleChat()">Chat with Me</div>
+    <div id="chat-content">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type a message..." onkeydown="sendMessage(event)">
+    </div>
+  </div>
+
+  <script src="personal.js"></script>
+</body>
+</html>
+
